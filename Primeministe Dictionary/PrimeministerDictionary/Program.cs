@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace _3.PrimeministerDictionary
 {
@@ -28,6 +31,7 @@ namespace _3.PrimeministerDictionary
 
             }
             //<iii>.Make a read - only dictionary.
+
             //<iv>.Sort the dictionary by year
             Console.WriteLine("The Sorted dictionary by year");
 
@@ -38,10 +42,15 @@ namespace _3.PrimeministerDictionary
 
             }
 
+            //<iii>.Make a read - only dictionary.
 
-
+        
 
 
         }
-    }
 }
+
+}
+
+    
+

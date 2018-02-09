@@ -27,6 +27,7 @@ namespace inventorysystem
            
             foreach (Product item in prod)
             {
+
                 Console.WriteLine(item);
 
             }

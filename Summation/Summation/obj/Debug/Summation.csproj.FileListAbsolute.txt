@@ -1,0 +1,6 @@
+c:\users\firoja\desktop\FIROJA\Summation\Summation\bin\Debug\Summation.exe.config
+c:\users\firoja\desktop\FIROJA\Summation\Summation\bin\Debug\Summation.exe
+c:\users\firoja\desktop\FIROJA\Summation\Summation\bin\Debug\Summation.pdb
+c:\users\firoja\desktop\FIROJA\Summation\Summation\obj\Debug\Summation.csproj.CoreCompileInputs.cache
+c:\users\firoja\desktop\FIROJA\Summation\Summation\obj\Debug\Summation.exe
+c:\users\firoja\desktop\FIROJA\Summation\Summation\obj\Debug\Summation.pdb
