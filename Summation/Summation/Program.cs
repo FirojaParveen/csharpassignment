@@ -13,7 +13,9 @@ namespace Summation
             float x = 0.06f;
             float y = 5.94f;
             float sum = x + y;
+            
             Console.WriteLine("the sum of two nos is" + sum);
+            Console.WriteLine("check if two nos are equal");
             if (sum == 6)
             {
                 Console.WriteLine("true");
@@ -22,7 +24,8 @@ namespace Summation
             {
                 Console.WriteLine("false");
             }
-            if(x>y)
+            Console.WriteLine("check which no is greater");
+            if (x>y)
             {
                 Console.WriteLine("x is greater than y");
             }
@@ -31,7 +34,5 @@ namespace Summation
                 Console.WriteLine("y is greater than x");
             }
         }
-       
-
     }
 }

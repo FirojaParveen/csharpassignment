@@ -50,7 +50,7 @@ namespace Inventorycomparison
                
                 
             }
-            Console.WriteLine("potato is present in indexes"); 
+            Console.WriteLine("potato is present in indexes");
             foreach (var item in index)
             {
                 Console.Write(item + ",");   
