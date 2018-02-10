@@ -24,14 +24,23 @@ namespace SwitchCaseInventory
             prod.Add(new Product() { Name = "broccoli", Price = 20.2, Quantity = 75, Type = "cruciferous" });
             prod.Add(new Product() { Name = "garlic", Price = 30, Quantity = 20, Type = "leafygreen" });
             prod.Add(new Product() { Name = "silverbeet", Price = 10, Quantity = 50, Type = "marrow" });
-            Console.WriteLine("which function do you want to perform?");
+           /* Console.WriteLine("which function do you want to perform?");
             Console.WriteLine("Case1: print the list of products according to their types.");
             Console.WriteLine("case2: print the the total price of the products in the list");
             Console.WriteLine("case3: print the average price of the products in the list");
-            Console.WriteLine("case4: print the cheap and costly products in the list");
-            Console.WriteLine("case5: exit");
-            int option = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("case4: print the cheap and costly products in the list");*/
+            
            
+            int x = 0;
+            do
+            {
+                Console.WriteLine("which function do you want to perform?");
+                Console.WriteLine("Case1: print the list of products according to their types.");
+                Console.WriteLine("case2: print the the total price of the products in the list");
+                Console.WriteLine("case3: print the average price of the products in the list");
+                Console.WriteLine("case4: print the cheap and costly products in the list");
+                Console.WriteLine("case5: exit");
+                int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
 
                 {
@@ -142,15 +151,18 @@ namespace SwitchCaseInventory
                                 break;
                         }// switch2
                         break;
-                case 5:
-                    break;
+                    case 5:
+                        x = 1;
+                        break;
                     default:
+                        x = 1;
                         Console.WriteLine("invalid option. Please choose a valid option");
                         break;
-                      
+
 
                 }// main switch
-            
+            } //while
+            while (x < 1);
            
 
 
