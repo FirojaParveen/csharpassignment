@@ -1,0 +1,7 @@
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\bin\Debug\absclass.exe.config
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\bin\Debug\absclass.exe
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\bin\Debug\absclass.pdb
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\obj\Debug\absclass.csprojResolveAssemblyReference.cache
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\obj\Debug\absclass.csproj.CoreCompileInputs.cache
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\obj\Debug\absclass.exe
+C:\Users\firoja\Desktop\FIROJA\csharpassignment1\absclass\absclass\obj\Debug\absclass.pdb

@@ -1,7 +1,0 @@
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\bin\Debug\EnglishDictionary.exe.config
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\bin\Debug\EnglishDictionary.exe
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\bin\Debug\EnglishDictionary.pdb
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\obj\Debug\EnglishDictionary.csprojResolveAssemblyReference.cache
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\obj\Debug\EnglishDictionary.csproj.CoreCompileInputs.cache
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\obj\Debug\EnglishDictionary.exe
-C:\Users\firoja\Desktop\FIROJA\EnglishDictionary\EnglishDictionary\obj\Debug\EnglishDictionary.pdb
