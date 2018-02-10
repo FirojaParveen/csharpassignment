@@ -9,11 +9,11 @@ namespace absclass
     
         public abstract class Employee
         {
-         private int Id { get; set; }
-         private String Name { get; set; }
+        private int Id { get; set; }
+        private String Name { get; set; }
         private String Designation { get; set; }
         private int Annual_salary { get; set; }
-        private int joining_date { get; set; }
+        private DateTime joining_date { get; set; }
         private int Experience { get; set; }
         public abstract void calculate_salary(int Annual_salary, int Experience); 
        }

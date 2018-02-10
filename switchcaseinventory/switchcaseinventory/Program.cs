@@ -29,117 +29,129 @@ namespace SwitchCaseInventory
             Console.WriteLine("case2: print the the total price of the products in the list");
             Console.WriteLine("case3: print the average price of the products in the list");
             Console.WriteLine("case4: print the cheap and costly products in the list");
+            Console.WriteLine("case5: exit");
             int option = Convert.ToInt32(Console.ReadLine());
-            switch (option)
+           
+                switch (option)
 
-            {
-                case 1:
+                {
+                    case 1:
 
-                    foreach (Product item in prod)
-                    {
-                        switch (item.Type)
+                        foreach (Product item in prod)
                         {
-                            case "leafygreen":
-                                Console.WriteLine("product under leafygreen:");
+                            switch (item.Type)
+                            {
+                                case "leafygreen":
+                                    Console.WriteLine("product under leafygreen:");
 
-                                Console.WriteLine(item.Name);
-                                Console.WriteLine();
+                                    Console.WriteLine(item.Name);
+                                    Console.WriteLine();
+                                    break;
+                                case "cruciferous":
+                                    Console.WriteLine("product under cruciferous:");
+
+                                    Console.WriteLine(item.Name);
+                                    Console.WriteLine();
+                                    break;
+                                case "marrow":
+                                    Console.WriteLine("product under marrow:");
+
+                                    Console.WriteLine(item.Name);
+                                    Console.WriteLine();
+                                    break;
+                            }//switch1
+                        }
+                        break;
+                    case 2:
+                        double pricesum = 0;
+                        double totalprice = 0;
+                        foreach (Product item in prod)
+                        {
+                            pricesum = item.Price * item.Quantity;
+                            totalprice = totalprice + pricesum;
+                        }
+                        Console.WriteLine("the total price of the products in the list:    " + totalprice);
+                        break;
+
+                    case 3:
+                        double average = 0;
+                        double sum = 0;
+                        foreach (Product item in prod)
+                        {
+                            sum = sum + item.Price;
+                            average = sum / prod.Count;
+                        }
+                        Console.WriteLine("the average price of the products in the list:    " + average);
+                        break;
+                    case 4:
+                        Console.WriteLine("if you want to print list of cheap products choose case1 or else if you want to print list of costly products choose case 2");
+                        int opt = Convert.ToInt32(Console.ReadLine());
+                        switch (opt)
+
+                        {
+                            case 1:
+                                List<string> mylist = new List<string>();
+                                foreach (Product item in prod)
+                                {
+                                    if (item.Price > 50)
+                                    {
+                                        mylist.Add(item.Name);
+                                    }
+
+                                }
+                                if (mylist.Count > 0)
+                                {
+                                    Console.WriteLine("print list of costly products");
+                                    foreach (var item in mylist)
+                                    {
+                                        Console.Write(item + ",");
+                                    }
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("There is no costly products in the list");
+                                }
+
                                 break;
-                            case "cruciferous":
-                                Console.WriteLine("product under cruciferous:");
-
-                                Console.WriteLine(item.Name);
-                                Console.WriteLine();
+                            case 2:
+                                List<string> list = new List<string>();
+                                foreach (Product item in prod)
+                                {
+                                    if (item.Price < 50)
+                                    {
+                                        list.Add(item.Name);
+                                    }
+                                }
+                                if (list.Count > 0)
+                                {
+                                    Console.WriteLine("The cheap products in the list are:");
+                                    foreach (var item in list)
+                                    {
+                                        Console.Write(item + ",");
+                                    }
+                                    Console.WriteLine();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("There is no cheap products in the list");
+                                }
                                 break;
-                            case "marrow":
-                                Console.WriteLine("product under marrow:");
-
-                                Console.WriteLine(item.Name);
-                                Console.WriteLine();
+                            default:
+                                Console.WriteLine("invalid option. Please choose a valid option");
                                 break;
-                        }//switch1
-                    }
+                        }// switch2
+                        break;
+                case 5:
                     break;
-                case 2:
-                    double pricesum = 0;
-                    double totalprice = 0;
-                    foreach (Product item in prod)
-                    {
-                        pricesum = item.Price * item.Quantity;
-                        totalprice = totalprice + pricesum;
-                    }
-                    Console.WriteLine("the total price of the products in the list:    " + totalprice);
-                    break;
+                    default:
+                        Console.WriteLine("invalid option. Please choose a valid option");
+                        break;
+                      
 
-                case 3:
-                    double average = 0;
-                    double sum = 0;
-                    foreach (Product item in prod)
-                    {
-                        sum = sum + item.Price;
-                        average = sum / prod.Count;
-                    }
-                    Console.WriteLine("the average price of the products in the list:    " + average);
-                    break;
-                case 4:
-                    Console.WriteLine("if you want to print list of cheap products choose case1 or else if you want to print list of costly products choose case 2");
-                    int opt = Convert.ToInt32(Console.ReadLine());
-                    switch (opt)
-
-                    {
-                        case 1:
-                            List<string> mylist = new List<string>();
-                            foreach (Product item in prod)
-                            {
-                                if (item.Price > 50)
-                                {
-                                    mylist.Add(item.Name);
-                                }
-
-                            }
-                            if (mylist.Count > 0)
-                            {
-                                Console.WriteLine("print list of costly products");
-                                foreach (var item in mylist)
-                                {
-                                    Console.Write(item + ",");
-                                }
-                            }
-
-                            else
-                            {
-                                Console.WriteLine("There is no costly products in the list");
-                            }
-
-                            break;
-                        case 2:
-                            List<string> list = new List<string>();
-                            foreach (Product item in prod)
-                            {
-                                if (item.Price < 50)
-                                {
-                                    list.Add(item.Name);
-                                }
-                            }
-                            if (list.Count > 0)
-                            {
-                                Console.WriteLine("The cheap products in the list are:");
-                                foreach (var item in list)
-                                {
-                                    Console.Write(item + ",");
-                                }
-                                Console.WriteLine();
-                            }
-                            else
-                            {
-                                Console.WriteLine("There is no cheap products in the list");
-                            }
-                            break;
-                    }// switch2
-                    break;
-
-            }// main switch
-
+                }// main switch
+            
+           
 
 
         }// main
