@@ -1,0 +1,6 @@
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\bin\Debug\primeminister_dictionary.exe.config
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\bin\Debug\primeminister_dictionary.exe
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\bin\Debug\primeminister_dictionary.pdb
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\obj\Debug\primeminister_dictionary.csproj.CoreCompileInputs.cache
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\obj\Debug\primeminister_dictionary.exe
+C:\Users\firoja\desktop\csharpassignment\primeminister_dictionary\primeminister_dictionary\obj\Debug\primeminister_dictionary.pdb
